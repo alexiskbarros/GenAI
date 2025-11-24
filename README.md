@@ -1,5 +1,4 @@
-# GenAI
-Here’s a first draft of a README document, following best practices for a modern React/AI-assisted project and tailored to your team and assignment requirements. Be sure to update placeholders (like app name, features, tech choices, and links) as your app evolves.
+# ENTI 633 Generative AI and Prompting
 
 ***
 
