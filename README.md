@@ -111,7 +111,7 @@ Submit a course support request form.
 - Receive notification of your assigned group and meeting time.
 For peers:
 - View your assigned group(s) and confirmed schedule.
-- 
+  
 - Troubleshooting:
 If the dashboard doesn’t load, check your console for errors or verify your Google Sheet formatting matches the provided template (see /docs/setup.md).
 
