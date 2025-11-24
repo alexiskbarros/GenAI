@@ -3,13 +3,14 @@ Here’s a first draft of a README document, following best practices for a mode
 
 ***
 
-# Project Title
+# Tutor Match Scheduler
 
-_A short mission statement summarizing your app’s business goal and value._
+Our mission is to accelerate student success by using intelligent automation to match learners with qualified peer tutors—quickly, fairly, and at scale—so that every student can access timely, impactful academic support and realize their full learning potential.
 
 ## Table of Contents
 - About
 - Features
+- Problem Statement
 - Tech Stack
 - Getting Started
 - Usage
@@ -22,31 +23,46 @@ _A short mission statement summarizing your app’s business goal and value._
 
 ## About
 
-This project was developed by MBA students at the Haskayne School of Business, University of Calgary, as part of ENTI 633 L01 (Fall 2025). The goal is to address **[brief business problem here]** by leveraging modern AI-assisted coding tools, enabling non-programmers to create impactful web applications within a tight timeframe.
+This project was developed by MBA students at the Haskayne School of Business, University of Calgary, as part of ENTI 633 L01 (Fall 2025). TutorMatchScheduler is a purpose-built web app that transforms the Peer Learning Program’s group matching process. It leverages generative AI to rapidly, fairly, and accurately match hundreds of students (“Learners”) with volunteer Learning Peers (tutors) each semester. By automating a process that currently takes weeks, it maximizes learning impact for students, increases operational efficiency, and preserves the program’s unique human-centered mentorship model.
+
+## Problem Statement
+
+Existing matching processes take 2–3 weeks due to high demand, complex eligibility/instructor rules, and limited staff resources. Each week of delay means missed learning opportunities—and evidence shows students gain most from 8+ uninterrupted sessions.
+No off-the-shelf system has met these needs, so a tailored solution is essential.
+TutorMatchScheduler is designed to address these specific constraints, maximizing session availability and matching speed while maintaining academic integrity.
 
 ## Features
 
-- **[Feature 1]:** Brief description  
-- **[Feature 2]:** Brief description  
-- **[Feature 3]:** Brief description  
-
-_Update features as you finalize your requirements._
+- **[Feature 1]:** Automated constraint-based group matching
+- **[Feature 2]:** Course, instructor, and availability filtering
+- **[Feature 3]:** Peer and learner profile management (Google Sheets friendly)
+- **[Feature 4]:** Staff dashboard for review and overrides
+- **[Feature 5]:** Transparent reporting and constraint failure alerts
 
 ## Tech Stack
 
-- **Frontend:** React, JavaScript, HTML, CSS  
-- **Development Platform:** Replit.com  
-- **AI Coding Tools:** ChatGPT, Claude, Copilot, Replit AI  
-- **Other Dependencies:** [List any major libraries/packages]  
+This application uses industry-standard, AI-friendly technologies for rapid prototyping and reliable deployment:
+
+**Frontend:** React with TypeScript, Vite
+**UI Components:** shadcn/ui (Radix UI primitives), Tailwind CSS
+**Routing:** Wouter
+**State Management:** TanStack Query (React Query)
+**Backend:** Node.js with Express.js (TypeScript)
+**Database:** PostgreSQL (Neon) with Drizzle ORM
+**Data Integration:** Google Sheets API via Replit Connectors
+**Icons:** Lucide React
+**Development & Deployment:** Replit
+**Version Control:** Git
 
 ***
 
 ## Getting Started
 
 **Prerequisites:**  
-- [Node.js](https://nodejs.org/en/) and [npm](https://www.npmjs.com/) (or [Yarn](https://yarnpkg.com/))  
-- Git (for cloning the repo)  
-- Optional: Replit account if using cloud IDE
+Node.js (v18 or higher recommended)
+Git
+A Replit account (for AI/automation and cloud running)
+Access to Google Sheets with test data
 
 **Setup Steps:**
 ```bash
@@ -72,9 +88,22 @@ _For Replit cloud development:_
 ## Usage
 
 - Open the app in your browser at `http://localhost:3000/` (or cloud link if deployed).
-- Step-by-step:
-  1. [Describe main steps a user follows to use core features]
-  2. [Add tips or notes for navigating/app usage]
+
+Workflow for new users:
+- Log in as staff, peer, or learner (depending on your role).
+- For staff/admin:
+Upload current Google Sheets containing Learning Peer and Learner availability, group limits, and instructor/course details.
+Trigger the Automated Matching Engine from the dashboard.
+Review and approve or adjust proposed groups and schedules.
+- For students (learners):
+Submit a course support request form.
+- Receive notification of your assigned group and meeting time.
+For peers:
+- View your assigned group(s) and confirmed schedule.
+- 
+- Troubleshooting:
+If the dashboard doesn’t load, check your console for errors or verify your Google Sheet formatting matches the provided template (see /docs/setup.md).
+
 - Screenshots:  
   _Add UI screenshots here as the app develops._
 
@@ -83,14 +112,7 @@ _For Replit cloud development:_
 ## Testing
 
 **Manual Testing:**  
-- [Checklist for verifying each feature]
-
-**Automated Testing (if implemented):**  
-```bash
-# Run unit tests
-npm test
-```
-_Describe what’s tested and expected outcome._
+- After installation, run through the full workflow: import test data, run the matcher, and verify group assignments in the admin dashboard.
 
 ***
 
@@ -114,6 +136,8 @@ README.md       # This file
 - **Carina** – Product Owner  
 - **Alexis** – Repository Manager  
 - **Jordyn** – Communications & Media Lead  
+
+Haskayne School of Business, University of Calgary
 
 ***
 
