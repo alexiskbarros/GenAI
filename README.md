@@ -43,14 +43,23 @@ TutorMatchScheduler is designed to address these specific constraints, maximizin
 This application uses industry-standard, AI-friendly technologies for rapid prototyping and reliable deployment:
 
 **Frontend:** React with TypeScript, Vite
+
 **UI Components:** shadcn/ui (Radix UI primitives), Tailwind CSS
+
 **Routing:** Wouter
+
 **State Management:** TanStack Query (React Query)
+
 **Backend:** Node.js with Express.js (TypeScript)
+
 **Database:** PostgreSQL (Neon) with Drizzle ORM
+
 **Data Integration:** Google Sheets API via Replit Connectors
+
 **Icons:** Lucide React
+
 **Development & Deployment:** Replit
+
 **Version Control:** Git
 
 ***
