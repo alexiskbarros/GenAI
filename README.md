@@ -68,8 +68,11 @@ This application uses industry-standard, AI-friendly technologies for rapid prot
 
 **Prerequisites:**  
 Node.js (v18 or higher recommended)
+
 Git
+
 A Replit account (for AI/automation and cloud running)
+
 Access to Google Sheets with test data
 
 **Setup Steps:**
