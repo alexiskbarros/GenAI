@@ -106,11 +106,8 @@ Workflow for new users:
 Upload current Google Sheets containing Learning Peer and Learner availability, group limits, and instructor/course details.
 Trigger the Automated Matching Engine from the dashboard.
 Review and approve or adjust proposed groups and schedules.
-- For students (learners):
-Submit a course support request form.
-- Receive notification of your assigned group and meeting time.
-For peers:
-- View your assigned group(s) and confirmed schedule.
+- For students (learners): Submit a course support request form. Receive notification of your assigned group and meeting time.
+- For peers: View your assigned group(s) and confirmed schedule.
   
 - Troubleshooting:
 If the dashboard doesn’t load, check your console for errors or verify your Google Sheet formatting matches the provided template (see /docs/setup.md).
